@@ -11,7 +11,6 @@ import Image from 'next/image';
 import ArticleList from '../../../components/library/ArticleList';
 
 export default function Article({ article, articles }) {
-    console.log(article);
     return (
         <CommonLayout>
             <section className='px-10 mt-8 lg:flex'>

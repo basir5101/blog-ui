@@ -14,7 +14,6 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 
 export default function Banner({ articles }) {
-    console.log(articles);
     return (
         <div>
             <Swiper

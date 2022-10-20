@@ -40,7 +40,9 @@ export default function Navbar() {
     ]
     return (
         <nav className='px-5 flex justify-between  items-center'>
-            <Image src="/logo.png" height={70} width={70} alt="logo" />
+            <Link href={'/'}>
+                <a><Image src="/logo.png" height={70} width={70} alt="logo" /></a>
+            </Link>
             <ul className='flex flex-wrap'>
                 {
                     nameLinks.map(item => <NavLink key={item.slug} name={item.name} link={item.slug} />)
