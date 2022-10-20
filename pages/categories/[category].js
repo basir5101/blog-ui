@@ -22,7 +22,7 @@ export default function Category(props) {
                                         viewport={{ once: false }}
                                         transition={{ duration: 0.3 }}
                                     >
-                                        <Link href={`/articles/${data?.attributes?.title.replace("?", "")}/${data.id}`}>
+                                        <Link href={`/articles/${data?.attributes?.slug}`}>
                                             <a>
                                                 <img src="https://lh3.googleusercontent.com/-P0d93sGjFSQ/Ycd6QmS_0KI/AAAAAAAABdQ/Yw59HnD9srQ1S7p4OrmP6Hf0Ad33Lzp_gCNcBGAsYHQ/s16000/1041.webp" alt="" />
                                                 <div className='w-full bg-purple-500 py-2 text-center  px-3'> {data?.attributes?.title} </div>
@@ -45,7 +45,7 @@ export default function Category(props) {
                                         viewport={{ once: false }}
                                         transition={{ duration: 0.3 }}
                                     >
-                                        <Link href={`/articles/${data?.attributes?.title.replace("?", "")}/${data.id}`}>
+                                        <Link href={`/articles/${data?.attributes?.slug}`}>
                                             <a>
                                                 <img src="https://lh3.googleusercontent.com/-P0d93sGjFSQ/Ycd6QmS_0KI/AAAAAAAABdQ/Yw59HnD9srQ1S7p4OrmP6Hf0Ad33Lzp_gCNcBGAsYHQ/s16000/1041.webp" alt="" />
                                                 <div className='w-full bg-purple-500 py-2 text-center  px-3'> {data?.attributes?.title} </div>
